@@ -8,6 +8,12 @@ public class Cab {
     String id;
     String driverName;
 
+    public Cab(String id, String driverName) {
+        this.id = id;
+        this.driverName = driverName;
+        this.isAvailable=true;
+    }
+
     @Setter
     Boolean isAvailable;
 
