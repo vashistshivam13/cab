@@ -1,5 +1,8 @@
 package com.shivamvashist.cab.model;
 
+import lombok.ToString;
+
+@ToString
 public class Rider {
 
     String id;

@@ -22,6 +22,16 @@ public class Cab {
 
     Trip currentTrip;
 
+    @Override
+    public String toString() {
+        return "Cab{" +
+                "id='" + id + '\'' +
+                ", driverName='" + driverName + '\'' +
+                ", currentLocation=" + currentLocation +
+                ", isAvailable=" + isAvailable +
+                '}';
+    }
+
     public String getId() {
         return id;
     }

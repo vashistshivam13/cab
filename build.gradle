@@ -16,6 +16,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly group: 'org.projectlombok', name: 'lombok'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-logging'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

@@ -1,17 +1,20 @@
 package com.shivamvashist.cab.manager;
 
+import com.shivamvashist.cab.exceptions.RiderAlreadyExistException;
 import com.shivamvashist.cab.model.Rider;
-import org.jetbrains.annotations.NotNull;
+import lombok.NonNull;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 
+@Component
 public class RiderManager {
 
     HashMap<String, Rider> riders = new HashMap<>();
 
-    public void registerRider(@NotNull Rider rider){
+    public void registerRider(@NonNull Rider rider){
         if(riders.containsKey(rider.getId())){
-            System.out.println("Already Exists");
+            throw new RiderAlreadyExistException();
         }
         riders.put(rider.getId(), rider);
     }

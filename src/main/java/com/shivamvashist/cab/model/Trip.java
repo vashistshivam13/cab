@@ -1,7 +1,9 @@
 package com.shivamvashist.cab.model;
 
 import com.shivamvashist.cab.enums.TripStatus;
+import lombok.ToString;
 
+@ToString
 public class Trip {
 
     Rider rider;
